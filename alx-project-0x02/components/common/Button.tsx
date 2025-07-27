@@ -10,18 +10,24 @@ const Button = ({ label, size, shape }: ButtonProps) => {
   };
 
   return (
+    <> 
+    <div>
     <button
       className={
         'bg-blue-600 text-white font-semibold';
         sizeClasses[size];
         shape
-      }
-    >
+      
       {label}
+      
+      
+    
     </button>
-  )
-}
+      </div>
+      }
+    )
 
+  
 export default Button;
 
 
