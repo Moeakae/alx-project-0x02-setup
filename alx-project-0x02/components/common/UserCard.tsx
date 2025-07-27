@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { UserProps } from '@/interfaces';
-import { BadgeCheck } from 'lucide-react';
+
 
 const UserCard: React.FC<UserProps> = ({ name, email, avatar, role }) => {
   return (
@@ -16,7 +16,7 @@ const UserCard: React.FC<UserProps> = ({ name, email, avatar, role }) => {
         <div>
           <div className="flex items-center gap-1">
             <h2 className="text-lg font-bold text-gray-800">{name}</h2>
-            {role === 'admin' && <BadgeCheck className="w-4 h-4 text-indigo-600" />}
+            
           </div>
           <p className="text-sm text-gray-500">{email}</p>
           <span className="inline-block mt-1 text-xs font-medium bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded-full capitalize">
