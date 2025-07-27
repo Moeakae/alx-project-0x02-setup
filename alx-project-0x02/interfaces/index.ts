@@ -9,3 +9,16 @@ export interface UserProps {
   content: string;
   role: 'admin' | 'user' | 'guest'; // You can adjust based on roles used
 }
+
+// interfaces/index.ts
+
+export interface CardProps {
+  id: number;
+  name: string;
+  email: string;
+  avatar: string;
+  title: string;
+  content: string;
+  role: 'admin' | 'user' | 'guest'; // You can adjust based on roles used
+}
+
