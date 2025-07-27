@@ -1,29 +1,30 @@
-// components/Button.tsx
 import React from 'react';
 
 type ButtonProps = {
-  title: string;
-  size?: 'small' | 'medium' | 'large';
-  shape?: 'rounded-sm' | 'rounded-md' | 'rounded-full';
-};
-
-const sizeClasses = {
-  small: 'text-sm px-3 py-1',
-  medium: 'text-base px-4 py-2',
-  large: 'text-lg px-5 py-3',
+    children: React.ReactNode;
+    onClick?: () => void;
+    type?: 'button' | 'submit' | 'reset';
+    disabled?: boolean;
+    className?: string;
 };
 
 const Button: React.FC<ButtonProps> = ({
-  title,
-  size = 'medium',
-  shape = 'rounded-md',
-}) => {
-  const finalClass = `bg-blue-600 text-white font-semibold ${sizeClasses[size]} ${shape}`;
-
-  return <button className={finalClass}>{title}</button>;
-};
+    children,
+    onClick,
+    type = 'button',
+    disabled = false,
+    className = '',
+}) => (
+    <button
+        type={type}
+        onClick={onClick}
+        disabled={disabled}
+        className={`px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition ${className}`}
+    >
+        {children}
+    </button>
+);
 
 export default Button;
-
 
 
