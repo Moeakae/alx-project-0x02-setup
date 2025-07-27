@@ -3,6 +3,7 @@
 import React from 'react';
 import { CardProps } from '@/interfaces';
 
+
 const Card: React.FC<CardProps> = ({ title, content }) => {
   return (
     <div className="bg-white rounded-xl shadow-md p-6 transition hover:shadow-lg">
