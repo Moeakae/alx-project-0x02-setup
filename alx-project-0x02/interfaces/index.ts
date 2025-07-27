@@ -23,8 +23,12 @@ export interface CardProps {
   content: string;
   address: string;
   CatchPhrase: string;
-  role: 'admin' | 'user' | 'guest'; // You can adjust based on roles used
+  role: 'admin' | 'user' | 'guest'; // You can adjust based on roles // interfaces/index.ts
+  image?: string; // Optional image
+  footer?: React.ReactNode; // Optional footer content like buttons
 }
+
+
 
 export interface PostProps {
   id: number;// You can adjust based on role
