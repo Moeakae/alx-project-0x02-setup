@@ -69,3 +69,9 @@ export interface UserModalProps {
   onSubmit: (post: UserProps) => void;
 }
 
+export interface ButtonProps {
+  "size", "rounde-sm"
+"shape", "rounded-md"
+  "small", "medium"
+ "rounded-sm", "large"
+}
