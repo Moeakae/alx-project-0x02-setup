@@ -6,6 +6,8 @@ type ButtonProps = {
     type?: 'button' | 'submit' | 'reset';
     disabled?: boolean;
     className?: string;
+    shape?: string;
+    size?: string;
 };
 
 const Button: React.FC<ButtonProps> = ({
