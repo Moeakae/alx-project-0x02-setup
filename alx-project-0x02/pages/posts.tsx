@@ -20,6 +20,8 @@ const Posts: React.FC<PostProps[]> = ({ posts }) => {
       <main className="p-4">
         <div className="flex justify-between">
           <h1 className=" text-2xl font-semibold">Post Content</h1>
+         <h1 className="text-2xl font-bold">Posts Page</h1>
+
           <button onClick={() => setModalOpen(true)}
             className="bg-blue-700 px-4 py-2 rounded-full text-white">Add Post</button>
         </div>
@@ -50,5 +52,11 @@ export async function getStaticProps() {
     }
   }
 }
+
+
+
+
+
+
 
 export default Posts;

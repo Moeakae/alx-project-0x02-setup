@@ -27,7 +27,7 @@ export interface CardProps {
 }
 
 export interface PostProps {
-  id: number;
+  id: number;// You can adjust based on role
   name: string;
   email: string;
   avatar: string;
@@ -37,8 +37,7 @@ export interface PostProps {
   userId: number;
   body: string;
   CatchPhrase: string;
-  role: 'admin' | 'user' | 'guest'; // You can adjust based on role
-  
+  role: 'admin' | 'user' | 'guest'
 }
 export interface PostData {
   userId: number;
@@ -74,4 +73,16 @@ export interface ButtonProps {
 "shape", "rounded-md"
   "small", "medium"
  "rounded-sm", "large"
+}
+export interface PostCardProps {
+  id: number;// You can adjust based on role
+  name: string;
+  email: string;
+  avatar: string;
+  title: string;
+  content: string;
+  address: string;
+  userId: number;
+  body: string;
+  CatchPhrase: string;
 }
