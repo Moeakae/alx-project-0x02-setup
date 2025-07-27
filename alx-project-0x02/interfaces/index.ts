@@ -68,12 +68,15 @@ export interface UserModalProps {
   onSubmit: (post: UserProps) => void;
 }
 
+// interfaces/index.ts
+
 export interface ButtonProps {
-  "size", "rounde-sm"
-"shape", "rounded-md"
-  "small", "medium"
- "rounded-sm", "large"
+  label: string;
+  size: 'small' | 'medium' | 'large';
+  shape: 'rounded-sm' | 'rounded-md' | 'rounded-full';
 }
+
+
 export interface PostCardProps {
   id: number;// You can adjust based on role
   name: string;
