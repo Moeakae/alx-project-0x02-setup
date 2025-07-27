@@ -7,6 +7,7 @@ export interface UserProps {
   avatar: string;
   title: string;
   content: string;
+  address: string;
   role: 'admin' | 'user' | 'guest'; // You can adjust based on roles used
 }
 
@@ -19,6 +20,7 @@ export interface CardProps {
   avatar: string;
   title: string;
   content: string;
+  address: string;
   role: 'admin' | 'user' | 'guest'; // You can adjust based on roles used
 }
 
