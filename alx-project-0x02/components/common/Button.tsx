@@ -1,4 +1,5 @@
 import React from 'react';
+import { ButtonProps } from '@/interfaces';
 
 type ButtonProps = {
     children: React.ReactNode;
