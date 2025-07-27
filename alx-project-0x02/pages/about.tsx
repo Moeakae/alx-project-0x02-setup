@@ -1,6 +1,7 @@
 // pages/about.tsx
 import React from 'react';
 import Header from '@/components/layout/Header';
+import Button from '@/components/common/Button';
 
 const About = () => {
   return (
@@ -12,8 +13,9 @@ const About = () => {
       <main className="p-4">
         <h1 className="text-2xl font-bold">About Us</h1>
       </main>
+      <Button />
     </>
-  
+
 
     </div>
   );
