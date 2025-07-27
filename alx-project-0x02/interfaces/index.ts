@@ -5,5 +5,7 @@ export interface UserProps {
   name: string;
   email: string;
   avatar: string;
+  title: string;
+  content: string;
   role: 'admin' | 'user' | 'guest'; // You can adjust based on roles used
 }
