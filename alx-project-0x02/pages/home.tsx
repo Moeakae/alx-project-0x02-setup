@@ -1,33 +1,17 @@
-// pages/home.tsx
-
-import Card from '@/components/common/Card';
 import Header from '@/components/layout/Header';
+import Card from '@/components/common/Card';
 
 const Home = () => {
   return (
-    
-       <div className="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <Card title="Welcome to Our Site" content="Discover amazing properties at the best prices." />
-      <Card title="Our Mission" content="To connect travelers with beautiful places around the world." />
-      <Card title="Why Choose Us?" content="Over 2 million listings, trusted by travelers globally." />
-
-       import Header from '@/components/layout/Header';
-
-
     <>
       <Header />
-      <main className="p-4">
-        <h1 className="text-2xl font-bold">Welcome to the Home Page</h1>
+      <main className="p-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <Card title="Welcome!" content="This is the home page of our app." />
+        <Card title="Features" content="Reusable components make your code clean and efficient." />
+        <Card title="Get Started" content="Explore the About and Posts pages using the header links." />
       </main>
     </>
-  
-
-      </div>
-
-    
-
   );
 };
 
 export default Home;
-
